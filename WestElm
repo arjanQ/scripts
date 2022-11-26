@@ -1,0 +1,12 @@
+local max = 30
+local rn = 0
+while task.wait(0) do
+game:GetService("ReplicatedStorage").Packages._Index["sleitnick_knit@1.4.7"].knit.Services.TutorialServer.RF.SkipWageTimer:InvokeServer()
+game:GetService("ReplicatedStorage").Packages._Index["sleitnick_knit@1.4.7"].knit.Services.CashService.RF.DepositCheck:InvokeServer()
+rn = rn + 1
+if rn == max then break end
+end
+local ohNumber1 = 1
+game:GetService("ReplicatedStorage").Packages._Index["sleitnick_knit@1.4.7"].knit.Services.MerchShopPurchase.RF.CallPurchase:InvokeServer(ohNumber1)
+local ohNumber1 = 2
+game:GetService("ReplicatedStorage").Packages._Index["sleitnick_knit@1.4.7"].knit.Services.MerchShopPurchase.RF.CallPurchase:InvokeServer(ohNumber1)
